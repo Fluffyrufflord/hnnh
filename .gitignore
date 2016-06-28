@@ -1,0 +1,83 @@
+# OSX system files #
+####################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Git #
+#######
+
+*.git
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# Wordpress #
+#############
+
+sitemap.xml
+sitemap.xml.gz
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+wp-content/plugins/hello.php
+
+/readme.html
+/license.txt
+
+# Temporary #
+#############
+
+tmp
+.grunt
+
+# PHPStorm #
+############
+
+.idea/
+
+# NPM & BOWER #
+###############
+
+node_modules/
+bower_components/
+
+# SASS #
+########
+
+.sass-cache/
+*.css.map
+
+# Composer #
+############
+
+composer.phar
+composer.lock
+vendor/
+
+# CUSTOM #
+##########
