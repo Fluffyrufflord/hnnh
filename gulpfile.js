@@ -98,29 +98,6 @@ gulp.task('clean:node_modules', function() {
     del.sync('./src/css/node_modules');
 });
 
-
-gulp.task( 'deploy', function () {
-
-    var conn = ftp.create( {
-        host:     'wp204.webpack.hosteurope.de',
-        user:     'ftp1177004-portfolio',
-        password: 'pen!s_13',
-        parallel: 10,
-        log:      gutil.log
-    } );
-
-    var globs = [
-        'dist/**'
-    ];
-
-    return gulp.src( globs, { base: '.', buffer: false } )
-        .pipe( conn.newer( '/' ) )
-        .pipe( conn.dest( '/' ) );
-} );
-
-
-
-
 //  sequences
 
 gulp.task('default', function (callback) {
