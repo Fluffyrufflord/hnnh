@@ -1,0 +1,32 @@
+{
+    "name": "portfolio-h",
+    "version": "1.0.0",
+    "description": "prtflio-h",
+    "main": "index.js",
+    "dependencies": {
+        "normalize.css": "*",
+        "pills": "*"
+    },
+    "devDependencies": {
+        "browser-sync": "*",
+        "del": "*",
+        "gulp": "*",
+        "gulp-autoprefixer": "*",
+        "gulp-cache": "*",
+        "gulp-cssnano": "*",
+        "gulp-if": "*",
+        "gulp-imagemin": "*",
+        "gulp-npm-files": "*",
+        "gulp-rename": "*",
+        "gulp-sass": "*",
+        "gulp-sourcemaps": "*",
+        "gulp-uglify": "*",
+        "gulp-useref": "*",
+        "gulp-util": "*",
+        "run-sequence": "*",
+        "vinyl-ftp": "*"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

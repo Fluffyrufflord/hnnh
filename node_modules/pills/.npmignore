@@ -1,0 +1,10 @@
+.sass-cache/
+img/
+css/
+npm-debug.log
+.DS_Store
+node_modules/
+bower_components/
+index.html
+.gitignore
+bower.json
