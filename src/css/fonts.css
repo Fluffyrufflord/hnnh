@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-bold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-bold-webfont.woff') format('woff');
+    font-weight: 700;;
+    font-style: normal;;
+
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-bolditalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-bolditalic-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: italic;;
+
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-extrabold-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-extrabold-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-extrabolditalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-extrabolditalic-webfont.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-medium-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-medium-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-mediumitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-mediumitalic-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-italic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-italic-webfont.woff') format('woff');
+    font-weight: normal;;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-light-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-lightitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-lightitalic-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'larsseitthin';
+    src: url('../assets/fonts/larsseit-thin-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-thin-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Larsseit';
+    src: url('../assets/fonts/larsseit-thinitalic-webfont.woff2') format('woff2'),
+         url('../assets/fonts/larsseit-thinitalic-webfont.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+
+}
