@@ -10,10 +10,12 @@
   "devDependencies": {
     "browser-sync": "*",
     "del": "*",
+    "fontfacegen": "^0.2.1",
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-cache": "*",
     "gulp-cssnano": "*",
+    "gulp-fontgen": "^0.2.3",
     "gulp-if": "*",
     "gulp-imagemin": "*",
     "gulp-load-plugins": "^1.2.4",
@@ -25,6 +27,7 @@
     "gulp-useref": "*",
     "gulp-util": "*",
     "run-sequence": "*",
+    "through2": "^2.0.1",
     "vinyl-ftp": "*"
   },
   "keywords": [],
