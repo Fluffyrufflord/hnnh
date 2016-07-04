@@ -4,7 +4,7 @@
   "description": "prtflio-h",
   "main": "index.js",
   "dependencies": {
-    "modularscale-sass": "^2.1.1",
+    "modularscale-sass": "*",
     "normalize.css": "*",
     "pills": "*"
   },
@@ -15,10 +15,9 @@
     "gulp-autoprefixer": "*",
     "gulp-cache": "*",
     "gulp-cssnano": "*",
-    "gulp-fontgen": "^0.2.3",
     "gulp-if": "*",
     "gulp-imagemin": "*",
-    "gulp-load-plugins": "^1.2.4",
+    "gulp-load-plugins": "*",
     "gulp-npm-files": "*",
     "gulp-rename": "*",
     "gulp-sass": "*",

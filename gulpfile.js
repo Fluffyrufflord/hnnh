@@ -107,10 +107,14 @@ gulp.task('clean:modules', function() {
     del.sync('./src/sass/modules');
 });
 gulp.task('clean:node_modules', function() {
-    del.sync('./src/css/node_modules');
-    del.sync('./src/css/modules/modularscale-sass');
-    del.sync('./src/sass/node_modules');
-    del.sync('./src/sass/modules/pills');
+    del.sync('./src/css/node_modules')
+    del.sync('./src/css/modules/modularscale-sass')
+    del.sync('./src/sass/node_modules')
+    del.sync('./src/sass/modules/pills')
+    del.sync('./src/sass/modules/pills/dist/pills.min.css')
+    del.sync('./src/sass/modules/modularscale-sass/stylesheets/_modular-scale-tests.scss')
+    del.sync('./src/sass/modules/modularscale-sass/test-compass/')
+    del.sync('./src/sass/modules/modularscale-sass/test-node-sass/');
 });
 
 //  sequences
