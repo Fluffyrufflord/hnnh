@@ -1,7 +1,6 @@
-// Base
-// @import "variables";
+@import "modules/modularscale-sass/stylesheets/_modular-scale.scss";
 
-/*  General
+/*  Generals
     =================================================== */
 
 html {
@@ -18,8 +17,8 @@ html {
 
 html {
 
-    font-size: 1.375em; /* 22 */
-    line-height: 1.6363636364em; /* 36px */
+    font-size: ms(0);
+    line-height: 28px;
 }
 body {
 
@@ -36,13 +35,13 @@ h1, h2, h3, h4 {
     font-weight: 600;
     font-style: inherit;
     color: #2B2B2B;
-    padding: 0.81818181818182rem 0; /* 18px */
+    padding: 14px 0;
     margin: 0;
 }
 h1 {
 
-    font-size: 4.236em;
-    line-height: 4.90909090909091rem; /* 108px */
+    font-size: ms(11);
+    line-height: 112px;
     font-weight: 900;
     letter-spacing: -10px;
     text-transform: uppercase;
@@ -50,14 +49,14 @@ h1 {
 }
 h2 {
 
-    font-size: 2.618em;
-    line-height: 3.2727272727rem; /* 72px */
+    font-size: ms(7);
+    line-height: 84px;
     letter-spacing: -3px;
 }
 h3 {
 
-    font-size: 1.618em;
-    line-height: 1.6363636364rem; /* 36px */
+    font-size: ms(1);
+    line-height: 28px;
     letter-spacing: -2px;
 }
 h4, h5 {
@@ -66,13 +65,13 @@ h4, h5 {
 }
 p, pre, table, blockquote {
 
-    padding: 0.81818181818182rem 0; /* 18px */
+    padding: 14px 0;
     margin: 0;
 }
 ul, ol {
 
     list-style-position: outside;
-    padding: 0 18px;
+    padding: 0 14px;
     margin: 0;
 }
 ul ul, ol ol, ul ol, ol ul {
@@ -109,6 +108,6 @@ a {
 .hnnh {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 10px;
+    font-size: ms(0);
     letter-spacing: 6px;
 }

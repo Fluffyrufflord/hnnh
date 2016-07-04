@@ -45,8 +45,11 @@ gulp.task('modules:scss', function() {
     .pipe(rename(function (path) { path.extname = ".scss";}))
     .pipe(gulp.dest("./src/sass/modules"));
 });
-gulp.task('modules', function (callback) {
+gulp.task('modules:get', function (callback) {
     return runSequence('clean:modules','modules:get-css','modules:css','modules:get-scss','modules:scss','clean:node_modules',callback);
+});
+gulp.task('modules', function (callback) {
+    return runSequence('modules:get-css','modules:css','clean:node_modules',callback);
 });
 gulp.task('sass', function () {
     gulp.src('./src/sass/**/*.scss')
@@ -63,6 +66,7 @@ gulp.task('sass', function () {
         stream: true
     }));
 });
+
 gulp.task('watch', ['browserSync', 'sass'], function () {
     gulp.watch('./src/sass/**/*.scss', ['sass'])
     gulp.watch('./src/*.html', browserSync.reload)
@@ -123,5 +127,5 @@ gulp.task('default', function (callback) {
     runSequence('modules',['sass','browserSync','watch'],callback);
 });
 gulp.task('build', function (callback) {
-    runSequence('clean:dist','modules',['sass','useref','images','icons','fonts'],callback);
+    runSequence('clean:dist','modules',['sass','useref','images','fonts'],callback);
 });
