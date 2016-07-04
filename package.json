@@ -4,13 +4,13 @@
   "description": "prtflio-h",
   "main": "index.js",
   "dependencies": {
+    "modularscale-sass": "^2.1.1",
     "normalize.css": "*",
     "pills": "*"
   },
   "devDependencies": {
     "browser-sync": "*",
     "del": "*",
-    "fontfacegen": "^0.2.1",
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-cache": "*",
@@ -27,7 +27,6 @@
     "gulp-useref": "*",
     "gulp-util": "*",
     "run-sequence": "*",
-    "through2": "^2.0.1",
     "vinyl-ftp": "*"
   },
   "keywords": [],

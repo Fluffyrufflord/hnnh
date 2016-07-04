@@ -9,6 +9,10 @@ html {
     background-color: #E7E7E7;
 }
 
+.row {
+  max-width: 100%;
+}
+
 /*  Typo
     =================================================== */
 
@@ -19,16 +23,16 @@ html {
 }
 body {
 
-    font-family: 'Conv_CircularStd-Bold', Arial, sans-serif;
+    font-family: 'Conv_CircularStd-Book', Arial, sans-serif;
     // font-weight: 100;
     font-style: normal;
-    color: #3B3B3B;
+    color: #424242;
 
     position: relative;
 }
 h1, h2, h3, h4 {
 
-    font-family: 'Larsseit';
+    font-family: 'Conv_CircularStd-Bold';
     font-weight: 600;
     font-style: inherit;
     color: #2B2B2B;
@@ -97,7 +101,7 @@ sub {
 }
 a {
 
-    color: #424242;
+    color: white;
 }
 
 /*  Pages - Home
