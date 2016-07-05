@@ -1,33 +1,13 @@
 @import "modules/modularscale-sass/stylesheets/_modular-scale.scss";
 
-/*  Generals
-    =================================================== */
-
-html {
-
-    background-color: #E7E7E7;
-}
-
-.row {
-  max-width: 100%;
-}
-
 /*  Typo
     =================================================== */
 
 html {
-
+    font-family: 'Conv_CircularStd-Book', Arial, sans-serif;
     font-size: ms(0);
     line-height: 28px;
-}
-body {
-
-    font-family: 'Conv_CircularStd-Book', Arial, sans-serif;
-    // font-weight: 100;
-    font-style: normal;
     color: #424242;
-
-    position: relative;
 }
 h1, h2, h3, h4 {
 
@@ -70,12 +50,11 @@ p, pre, table, blockquote {
 }
 ul, ol {
 
-    list-style-position: outside;
-    padding: 0 14px;
+    list-style-type: none;
+    padding: 0;
     margin: 0;
 }
 ul ul, ol ol, ul ol, ol ul {
-
     margin: 0;
 }
 hr {
@@ -105,9 +84,98 @@ a {
 
 /*  Pages - Home
     =================================================== */
-.hnnh {
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: ms(0);
-    letter-spacing: 6px;
+
+html {
+    background-color: #E7E7E7;
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+.logo {
+    position: fixed;
+    top: 28px;
+    left: 28px;
+    z-index: 999;
+    .hnnh {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: ms(0);
+        letter-spacing: 6px;
+    }
+}
+.main-nav {
+    position: fixed;
+    top: 50%;
+    left: 28px;
+    z-index: 999;
+    width: 54px;
+    text-align: left;
+    margin-top: -70px;
+    a {
+        display: block;
+        font-size: ms(0);
+        text-decoration: none;
+        text-transform: uppercase;
+        line-height: 42px;
+        letter-spacing: 6px;
+        padding: 14px 0;
+    }
+}
+.menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #E7E7E7;
+    z-index: 777;
+    padding: 0 28px 0 230px;
+    a {
+        display: block;
+        font-size: ms(0);
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        line-height: 84px;
+        padding: 14px 0;
+    }
+}
+.inner-wrapper {
+    width: 100%;
+    height: 100%;
+
+    opacity: 1;
+}
+.align-wrapper {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.align {
+    display: table-cell;
+    vertical-align: middle;
+}
+.left-col {
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+.right-col {
+    width: 40%;
+    height: 100%;
+    float: left;
+    li {
+        float: right;
+        padding: 0 14px;
+    }
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
