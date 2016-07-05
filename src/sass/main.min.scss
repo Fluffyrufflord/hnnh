@@ -104,22 +104,30 @@ body {
         letter-spacing: 6px;
     }
 }
+.class {
+    margin:20px;
+    :hover {
+        color:yellow;
+    }
+ }
 .main-nav {
     position: fixed;
     top: 50%;
     left: 28px;
     z-index: 999;
-    width: 54px;
+    width: 98px;
     text-align: left;
     margin-top: -70px;
     a {
-        display: block;
         font-size: ms(0);
         text-decoration: none;
         text-transform: uppercase;
-        line-height: 42px;
+        line-height: 70px;
         letter-spacing: 6px;
         padding: 14px 0;
+        &:hover {
+            color: #424242;
+        }
     }
 }
 .menu {
@@ -131,20 +139,29 @@ body {
     background-color: #E7E7E7;
     z-index: 777;
     padding: 0 28px 0 230px;
-    a {
-        display: block;
-        font-size: ms(0);
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: 6px;
-        line-height: 84px;
-        padding: 14px 0;
+
+    transition: opacity .5s cubic-bezier(.23,1,.32,1) .1s;
+    opacity: 0;
+
+    .inner-wrapper {
+        width: 100%;
+        height: 100%;
+
+        a {
+            font-size: ms(0);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            line-height: 84px;
+            padding: 14px 0;
+            &:hover {
+                color: #424242;
+            }
+        }
     }
 }
-.inner-wrapper {
-    width: 100%;
-    height: 100%;
 
+.menu.open {
     opacity: 1;
 }
 .align-wrapper {
