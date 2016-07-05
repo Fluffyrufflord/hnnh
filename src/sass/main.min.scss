@@ -22,16 +22,28 @@ h1, h2, h3, h4 {
 
 h1 {
 
-    font-size: ms(11);
+    font-size: ms(3);
 
     font-weight: 900;
     letter-spacing: -10px;
 
     padding-top: 0;
-
     color: #FFFFFF;
-    letter-spacing: 70px;
+    letter-spacing: 14px;
     line-height: 84px;
+    @media screen and (min-width: 400px) {
+        font-size: ms(6);
+        letter-spacing: 28px;
+    }
+    @media screen and (min-width: 599px) {
+        font-size: ms(8);
+        letter-spacing: 28px;
+    }
+    @media screen and (min-width: 900px) {
+        font-size: ms(11);
+        letter-spacing: 42px;
+    }
+
 }
 h2 {
 
@@ -90,7 +102,7 @@ a {
     color: white;
 }
 
-/*  Pages - Home
+/*  Pages
     =================================================== */
 
 html {
@@ -101,11 +113,13 @@ body {
     height: 100%;
 }
 .row {
-    max-width: 100%;
+    // max-width: 100%;
     height: 100%;
 }
 .column {
     height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .logo {
     position: fixed;
@@ -161,12 +175,11 @@ body {
     background-color: #E7E7E7;
     z-index: 777;
     padding: 0 28px 0 230px;
-
     transition: opacity .5s cubic-bezier(.23,1,.32,1) .1s;
     opacity: 0;
 
     .inner-wrapper {
-
+            display: none;
         a {
             font-size: ms(0);
             text-decoration: none;
@@ -183,9 +196,10 @@ body {
 
 .menu.open {
     opacity: 1;
+    .inner-wrapper {
+        display: block;
+    }
 }
-
-
 .left-col {
     width: 60%;
     height: 100%;
@@ -203,7 +217,16 @@ body {
 #page {
     width: 100%;
     height: 100%;
-    padding: 0 200px 0 230px;
+    padding: 0 28px;
+    @media screen and (min-width: 400px) {
+        padding: 0 70px;
+    }
+    @media screen and (min-width: 599px) {
+        padding: 0 112px;
+    }
+    @media screen and (min-width: 900px) {
+        padding: 0 224px;
+    }
 }
 .desc {
     font-size: ms(3);
@@ -225,14 +248,40 @@ body {
         }
     }
 }
+#proud {
+    background-image: url("../assets/img/kings.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+#exhibitions {
+    .row {
+        height: auto;
+        .column {
+            height: auto;
+            padding-top: 0;
+            padding-bottom: 0;
+            ul {
+                @media screen and (min-width: 400px) {
 
+                }
+                @media screen and (min-width: 599px) {
+                    padding-left: 16%;
+                }
+                @media screen and (min-width: 900px) {
+
+                }
+            }
+        }
+    }
+}
 
 iframe {
     // display:block;
     // margin: 84px auto;
     border: none;
 }
-
 .clearfix:after {
     content: ".";
     display: block;
