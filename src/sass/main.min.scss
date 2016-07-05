@@ -14,18 +14,24 @@ h1, h2, h3, h4 {
     font-family: 'Conv_CircularStd-Bold';
     font-weight: 600;
     font-style: inherit;
-    color: #2B2B2B;
+    text-transform: uppercase;
+    color: white;
     padding: 14px 0;
     margin: 0;
 }
+
 h1 {
 
     font-size: ms(11);
-    line-height: 112px;
+
     font-weight: 900;
     letter-spacing: -10px;
-    text-transform: uppercase;
+
     padding-top: 0;
+
+    color: #FFFFFF;
+    letter-spacing: 70px;
+    line-height: 84px;
 }
 h2 {
 
@@ -37,7 +43,9 @@ h3 {
 
     font-size: ms(1);
     line-height: 28px;
-    letter-spacing: -2px;
+    letter-spacing: 8px;
+    color: #424242;
+
 }
 h4, h5 {
 
@@ -92,6 +100,13 @@ html {
 body {
     height: 100%;
 }
+.row {
+    max-width: 100%;
+    height: 100%;
+}
+.column {
+    height: 100%;
+}
 .logo {
     position: fixed;
     top: 28px;
@@ -104,12 +119,19 @@ body {
         letter-spacing: 6px;
     }
 }
-.class {
-    margin:20px;
-    :hover {
-        color:yellow;
+.inner-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.align-wrapper {
+    width: 100%;
+    height: 100%;
+    display: table;
+    .align {
+        display: table-cell;
+        vertical-align: middle;
     }
- }
+}
 .main-nav {
     position: fixed;
     top: 50%;
@@ -144,8 +166,6 @@ body {
     opacity: 0;
 
     .inner-wrapper {
-        width: 100%;
-        height: 100%;
 
         a {
             font-size: ms(0);
@@ -164,15 +184,8 @@ body {
 .menu.open {
     opacity: 1;
 }
-.align-wrapper {
-    width: 100%;
-    height: 100%;
-    display: table;
-}
-.align {
-    display: table-cell;
-    vertical-align: middle;
-}
+
+
 .left-col {
     width: 60%;
     height: 100%;
@@ -186,6 +199,38 @@ body {
         float: right;
         padding: 0 14px;
     }
+}
+#page {
+    width: 100%;
+    height: 100%;
+    padding: 0 200px 0 230px;
+}
+.desc {
+    font-size: ms(3);
+    color: #ADADAD;
+}
+.site #page {
+    height: 100%;
+    .content {
+        height: 100%;
+        h1 {
+            padding-top: 140px;
+            padding-bottom: 140px;
+        }
+        h3 {
+            padding-bottom: 0;
+        }
+        li {
+            margin-bottom: 56px;
+        }
+    }
+}
+
+
+iframe {
+    // display:block;
+    // margin: 84px auto;
+    border: none;
 }
 
 .clearfix:after {

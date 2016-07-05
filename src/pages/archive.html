@@ -4,20 +4,20 @@
         <title>HNNH</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-        <!--build:css css/main.min.css-->
-        <link rel="stylesheet" type="text/css" href="css/modules/normalize.css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/modules/pills/dist/pills.css">
-        <link rel="stylesheet" type="text/css" href="css/fonts.css">
-        <link rel="stylesheet" type="text/css" href="css/main.min.css">
+        <!--build:remove-->
+        <link rel="stylesheet" type="text/css" href="../css/modules/normalize.css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../css/modules/pills/dist/pills.css">
+        <link rel="stylesheet" type="text/css" href="../css/fonts.css">
         <!--endbuild-->
+        <link rel="stylesheet" type="text/css" href="../css/main.min.css">
     </head>
-    <body id="home">
+    <body id="vid-project" class="site">
         <div class="logo">
-            <a href="#" class="hnnh">hnnh rs stwrt</a>
+            <a href="../index.html" class="hnnh">hnnh rs stwrt</a>
         </div>
         <nav class="main-nav">
             <a href="" onclick="return false" id="menu" class="menu-link">Menu</a>
-            <a href="../pages/exhibitions.html" class="menu-link">Exhbtns</a>
+            <a href="/pages/exhibitions.html" class="menu-link">Exhbtns</a>
         </nav>
         <header class="menu">
             <div class="inner-wrapper">
@@ -28,8 +28,8 @@
                                 <div class="align-wrapper">
                                     <div class="align">
                                         <ul>
-                                            <li><a href="../pages/archive.html" data-label="">Archive</a></li>
-                                            <li><a href="../pages/kavos.html" data-label="">Kavos</a></li>
+                                            <li><a href="#" data-label="">Archive</a></li>
+                                            <li><a href="/pages/kavos.html" data-label="">Kavos</a></li>
                                             <li><a href="" data-label="">Proud to serve</a></li>
                                             <li><a href="" data-label="">War Machine</a></li>
                                         </ul>
@@ -53,8 +53,22 @@
                 </div>
             </div>
         </header>
-        <!--build:js js/main.min.js -->
-        <script src="./js/main.min.js"></script>
-        <!-- endbuild -->
+        <section id="page">
+
+            <div class="content">
+                <div class="row">
+                    <div class="column eleven offset by-one">
+                        <div class="inner-wrapper">
+                            <div class="align-wrapper">
+                                <div class="align">
+                                    <iframe src="https://player.vimeo.com/video/170705596?title=0&byline=0&portrait=0" width="100%" height="60%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="../js/main.min.js"></script>
     </body>
 </html>
