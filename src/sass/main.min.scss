@@ -40,7 +40,7 @@ h1 {
         letter-spacing: 28px;
     }
     @media screen and (min-width: 900px) {
-        font-size: ms(11);
+        font-size: ms(13);
         letter-spacing: 42px;
     }
 
@@ -254,6 +254,12 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    h1 {
+        text-align: center;
+    }
+    iframe {
+        display: none;
+    }
 }
 #exhibitions {
     .row {
@@ -274,6 +280,14 @@ body {
                 }
             }
         }
+    }
+}
+#img-project {
+    .align .row {
+        height: auto;
+    }
+    .column img {
+        width: 100%;
     }
 }
 
