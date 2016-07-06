@@ -129,25 +129,3 @@ gulp.task('default', function (callback) {
 gulp.task('build', function (callback) {
     runSequence('clean:dist','modules',['sass','useref','images','fonts'],callback);
 });
-
-gulp.task('deploy', function () {
-
-    var conn = ftp.create( {
-        host:     'server20.000webhost.com',
-        user:     'a8871862',
-        password: 'usp-rdsa4',
-        parallel: 4,
-        log:      'glp/gutil.log'
-
-    } );
-    var globs = [
-        '/public_html/assets/**',
-        '/public_html/css/**',
-        '/public_html/js/**',
-        '/public_html/pages/**',
-        '/public_html/index.html'
-    ];
-    return gulp.src( globs, { base: '.', buffer: false } )
-        .pipe( conn.newer( '/' ) )
-        .pipe( conn.dest( '/' ) );
-} );
