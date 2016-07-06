@@ -113,10 +113,10 @@ body {
     height: 100%;
 }
 .row {
-    // max-width: 100%;
+    max-width: 1180px;
     height: 100%;
 }
-.column {
+.row .column {
     height: 100%;
     padding-top: 0;
     padding-bottom: 0;
@@ -276,8 +276,7 @@ body {
         height: auto;
         .column {
             height: auto;
-            padding-top: 0;
-            padding-bottom: 0;
+
             img {
                 padding: 42px 0;
             }
@@ -322,17 +321,43 @@ body {
         padding-bottom: 140px;
     }
 }
-.exhibitions {
-    h1 {
-        padding-bottom: 140px;
-    }
-}
 #img-project {
     .align .row {
         height: auto;
     }
     .column img {
+
+    }
+}
+.exhibitions {
+    h1 {
+        padding-bottom: 140px;
+    }
+}
+
+.overtone {
+    .column img {
         width: 100%;
+    }
+}
+.warmachines {
+    #page {
+        height: auto;
+        .align {
+            display: block;
+        }
+        .img-1 {
+            margin-top: 84px;
+            width: 100%;
+        }
+        .img-2 {
+            margin-top: 280px;
+            width: 100%;
+        }
+        .img-3 {
+            margin-top: 350px;
+
+        }
     }
 }
 
