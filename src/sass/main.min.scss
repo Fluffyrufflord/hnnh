@@ -49,7 +49,7 @@ h2 {
 
     font-size: ms(7);
     line-height: 84px;
-    letter-spacing: -3px;
+    letter-spacing: 13px;
 }
 h3 {
 
@@ -126,12 +126,20 @@ body {
     top: 28px;
     left: 28px;
     z-index: 999;
-    .hnnh {
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: ms(0);
-        letter-spacing: 6px;
-    }
+
+}
+.hnnh {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: ms(0);
+    letter-spacing: 6px;
+    color: white;
+}
+.cat {
+    position: fixed;
+    top: 28px;
+    right: 28px;
+    z-index: 999;
 }
 .inner-wrapper {
     width: 100%;
@@ -162,7 +170,7 @@ body {
         letter-spacing: 6px;
         padding: 14px 0;
         &:hover {
-            color: #424242;
+            opacity: 0.55;
         }
     }
 }
@@ -188,7 +196,7 @@ body {
             line-height: 84px;
             padding: 14px 0;
             &:hover {
-                color: #424242;
+                opacity: 0.55;
             }
         }
     }
@@ -224,19 +232,19 @@ body {
     @media screen and (min-width: 599px) {
         padding: 0 112px;
     }
-    @media screen and (min-width: 900px) {
-        padding: 0 224px;
+    @media screen and (min-width: 1024px) {
+        padding: 0 180px;
     }
-}
-.desc {
-    font-size: ms(3);
-    color: #ADADAD;
 }
 .site #page {
     height: 100%;
     .content {
         height: 100%;
         h1 {
+            padding-top: 140px;
+            padding-bottom: 140px;
+        }
+        h2 {
             padding-top: 140px;
             padding-bottom: 140px;
         }
@@ -261,13 +269,38 @@ body {
         display: none;
     }
 }
-#exhibitions {
+#txt-project {
+    height: auto;
+    padding-bottom: 140px;
     .row {
         height: auto;
         .column {
             height: auto;
             padding-top: 0;
             padding-bottom: 0;
+            img {
+                padding: 42px 0;
+            }
+            h2 {
+                padding-bottom: 126px;
+                padding-left: 8%;
+                padding-right: 8%;
+            }
+            .txt {
+                font-size: ms(4);
+                padding: 28px 8%;
+            }
+            .quote {
+                font-family: 'Conv_CircularStd-Bold';
+                font-size: ms(6);
+                padding-left: 0;
+                line-height: 42px;
+                padding: 42px 0;
+            }
+            .desc {
+                font-size: ms(3);
+                color: #ADADAD;
+            }
             ul {
                 @media screen and (min-width: 400px) {
 
@@ -280,6 +313,16 @@ body {
                 }
             }
         }
+    }
+}
+.txt-project {
+    h1 {
+        padding-bottom: 140px;
+    }
+}
+.exhibitions {
+    h1 {
+        padding-bottom: 140px;
     }
 }
 #img-project {
