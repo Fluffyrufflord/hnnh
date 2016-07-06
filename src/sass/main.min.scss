@@ -289,6 +289,7 @@ body {
             .txt {
                 font-size: ms(4);
                 padding: 28px 8%;
+                color: #BABABA;
             }
             .quote {
                 font-family: 'Conv_CircularStd-Bold';
@@ -296,10 +297,11 @@ body {
                 padding-left: 0;
                 line-height: 42px;
                 padding: 42px 0;
+                color: #5E5E5E;
             }
             .desc {
                 font-size: ms(3);
-                color: #ADADAD;
+                color: #BABABA;
             }
             ul {
                 @media screen and (min-width: 400px) {
