@@ -28,7 +28,6 @@ h1 {
     letter-spacing: -10px;
 
     padding-top: 0;
-    color: #FFFFFF;
     letter-spacing: 14px;
     line-height: 84px;
     @media screen and (min-width: 400px) {
@@ -47,8 +46,8 @@ h1 {
 }
 h2 {
 
-    font-size: ms(7);
-    line-height: 84px;
+    font-size: ms(8);
+    line-height: 70px;
     letter-spacing: 13px;
 }
 h3 {
@@ -56,7 +55,6 @@ h3 {
     font-size: ms(1);
     line-height: 28px;
     letter-spacing: 8px;
-    color: #424242;
 
 }
 h4, h5 {
@@ -129,6 +127,7 @@ body {
 
 }
 .hnnh {
+    // font-family: 'Conv_CircularStd-Bold';
     text-transform: uppercase;
     text-decoration: none;
     font-size: ms(0);
@@ -291,12 +290,13 @@ body {
                 color: #BABABA;
             }
             .quote {
-                font-family: 'Conv_CircularStd-Bold';
-                font-size: ms(6);
+                // font-family: 'Conv_CircularStd-Bold';
+                font-size: ms(7);
                 padding-left: 0;
                 line-height: 42px;
                 padding: 42px 0;
-                color: #5E5E5E;
+                // color: #5E5E5E;
+                color: white;
             }
             .desc {
                 font-size: ms(3);
