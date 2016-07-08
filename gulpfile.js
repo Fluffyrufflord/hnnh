@@ -15,6 +15,7 @@ var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var ftp = require( 'vinyl-ftp' );
 var del = require('del');
+var plugins = require('gulp-load-plugins')();
 var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
 
@@ -129,3 +130,5 @@ gulp.task('default', function (callback) {
 gulp.task('build', function (callback) {
     runSequence('clean:dist','modules',['sass','useref','images','fonts'],callback);
 });
+
+gulp.task('deploy', require('./glp/deploy')(gulp, plugins));
