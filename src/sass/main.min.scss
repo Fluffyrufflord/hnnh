@@ -104,7 +104,7 @@ a {
     =================================================== */
 
 html {
-    background-color: #E7E7E7;
+    background-color: #ccced0;
     height: 100%;
 }
 body {
@@ -131,14 +131,14 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     font-size: ms(0);
-    letter-spacing: 6px;
+    letter-spacing: 4px;
     color: white;
 }
 .cat {
     position: fixed;
     top: 28px;
     right: 28px;
-    z-index: 999;
+    z-index: 666;
 }
 .inner-wrapper {
     width: 100%;
@@ -166,7 +166,7 @@ body {
         text-decoration: none;
         text-transform: uppercase;
         line-height: 70px;
-        letter-spacing: 6px;
+        letter-spacing: 4px;
         padding: 14px 0;
         &:hover {
             opacity: 0.55;
@@ -179,7 +179,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #E7E7E7;
+    background-color: #f4dfa6;
     z-index: 777;
     padding: 0 28px 0 230px;
     transition: opacity .5s cubic-bezier(.23,1,.32,1) .1s;
@@ -191,7 +191,7 @@ body {
             font-size: ms(0);
             text-decoration: none;
             text-transform: uppercase;
-            letter-spacing: 6px;
+            letter-spacing: 4px;
             line-height: 84px;
             padding: 14px 0;
             &:hover {
@@ -271,6 +271,7 @@ body {
 #txt-project {
     height: auto;
     padding-bottom: 140px;
+    background-color: #ccced0;
     .row {
         height: auto;
         .column {
@@ -280,14 +281,15 @@ body {
                 padding: 42px 0;
             }
             h2 {
-                padding-bottom: 126px;
+                padding-bottom: 84px;
                 padding-left: 8%;
                 padding-right: 8%;
+                color: #424242;
             }
             .txt {
                 font-size: ms(4);
                 padding: 28px 8%;
-                color: #BABABA;
+
             }
             .quote {
                 // font-family: 'Conv_CircularStd-Bold';
@@ -300,7 +302,7 @@ body {
             }
             .desc {
                 font-size: ms(3);
-                color: #BABABA;
+                color: white;
             }
             ul {
                 @media screen and (min-width: 400px) {
@@ -319,9 +321,14 @@ body {
 .txt-project {
     h1 {
         padding-bottom: 140px;
+
     }
 }
+#vid-project {
+    background-color: #ccced0;
+}
 #img-project {
+    background-color: #ccced0;
     .align .row {
         height: auto;
     }
