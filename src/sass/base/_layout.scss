@@ -1,0 +1,164 @@
+
+/*  General
+    =================================================== */
+
+html {
+    background-color: #ccced0;
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+.row {
+    max-width: 1180px;
+    height: 100%;
+}
+.row .column {
+    height: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.logo {
+    position: fixed;
+    top: 28px;
+    left: 28px;
+    z-index: 999;
+
+}
+.hnnh {
+    // font-family: 'Conv_CircularStd-Bold';
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: ms(0);
+    letter-spacing: 4px;
+    color: white;
+}
+.cat {
+    position: fixed;
+    top: 28px;
+    right: 28px;
+    z-index: 666;
+}
+.inner-wrapper {
+    width: 100%;
+    height: 100%;
+}
+.align-wrapper {
+    width: 100%;
+    height: 100%;
+    display: table;
+    .align {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+#page {
+    width: 100%;
+    height: 100%;
+    padding: 0 28px;
+    @media screen and (min-width: 400px) {
+        padding: 0 70px;
+    }
+    @media screen and (min-width: 599px) {
+        padding: 0 112px;
+    }
+    @media screen and (min-width: 1024px) {
+        padding: 0 180px;
+    }
+}
+.site #page {
+    height: 100%;
+    .content {
+        height: 100%;
+        h1 {
+            padding-top: 140px;
+            padding-bottom: 140px;
+        }
+        h2 {
+            padding-top: 140px;
+            padding-bottom: 140px;
+        }
+        h3 {
+            padding-bottom: 0;
+        }
+        li {
+            margin-bottom: 56px;
+        }
+    }
+}
+#img-project {
+    .align .row {
+        height: auto;
+    }
+    .column img {
+
+    }
+}
+.txt-project {
+    h1 {
+        padding-bottom: 140px;
+    }
+}
+#txt-project {
+    height: auto;
+    padding-bottom: 140px;
+    .row {
+        height: auto;
+        .column {
+            height: auto;
+
+            img {
+                padding: 42px 0;
+            }
+            h2 {
+                padding-bottom: 84px;
+                padding-left: 8%;
+                padding-right: 8%;
+                color: white;
+            }
+            h3 {
+                color: white;
+            }
+            .txt {
+                font-size: ms(4);
+                padding: 28px 8%;
+
+            }
+            .quote {
+                // font-family: 'Conv_CircularStd-Bold';
+                font-size: ms(5);
+                padding-left: 0;
+                line-height: 42px;
+                padding: 42px 0;
+            }
+            .desc {
+                font-size: ms(3);
+                color: #424242;
+            }
+            ul {
+                @media screen and (min-width: 400px) {
+
+                }
+                @media screen and (min-width: 599px) {
+                    padding-left: 16%;
+                }
+                @media screen and (min-width: 900px) {
+
+                }
+            }
+        }
+    }
+}
+
+iframe {
+
+    border: none;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
