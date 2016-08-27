@@ -40,9 +40,9 @@ gulp.task('sass', function () {
         browsers: ['last 2 versions'],
         cascade: false
     }))
-    .pipe(cssnano())
+    // .pipe(cssnano())
     .pipe(rename("main.min.css"))
-    .pipe(sourcemaps.write('./'))
+    // .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./src/css/'))
     .pipe(browserSync.reload({
         stream: true
