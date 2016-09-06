@@ -358,3 +358,11 @@ iframe {
     width: 100%; }
   .warmachines #page .img-3 {
     margin-top: 350px; }
+
+.work {
+  height: auto; }
+  .work #page {
+    padding-top: 140px;
+    height: auto; }
+    .work #page .row {
+      padding-bottom: 140px; }
