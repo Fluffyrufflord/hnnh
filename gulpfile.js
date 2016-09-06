@@ -70,7 +70,7 @@ gulp.task('useref', function(){
     .pipe(gulpIf('index.html', gulp.dest('./public_html')));
 });
 gulp.task('images', function(){
-    return gulp.src('./src/assets/img/*.+(png|jpg|gif)')
+    return gulp.src('./src/assets/img/**/*.+(png|jpg|gif)')
     .pipe(cache(imagemin({
         interlaced: true
     })))
