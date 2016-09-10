@@ -80,6 +80,10 @@ gulp.task('icons', function() {
     return gulp.src('./src/assets/icons/*')
     .pipe(gulp.dest('public_html/assets/icons'));
 });
+gulp.task('favicon', function() {
+    return gulp.src('./src/favicon.ico')
+    .pipe(gulp.dest('public_html'));
+});
 gulp.task('fonts', function() {
     return gulp.src('./src/assets/fonts/*')
     .pipe(gulp.dest('public_html/assets/fonts'));
@@ -94,7 +98,7 @@ gulp.task('default', function (callback) {
     runSequence('clear:cache',['sass','browserSync','watch'],callback);
 });
 gulp.task('build', function (callback) {
-    runSequence('clean:dist',['sass','useref','images','icons','fonts'],callback);
+    runSequence('clean:dist',['sass','useref','images','icons','favicon','fonts'],callback);
 });
 
 gulp.task('deploy', require('./glp/deploy')(gulp, plugins));
