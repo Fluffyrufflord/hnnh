@@ -101,4 +101,4 @@ gulp.task('build', function (callback) {
     runSequence('clean:dist',['sass','useref','images','icons','favicon','fonts'],callback);
 });
 
-// gulp.task('deploy', require('./glp/deploy')(gulp, plugins));
+gulp.task('deploy', require('./glp/deploy')(gulp, plugins));
