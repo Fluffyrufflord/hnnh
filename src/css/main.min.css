@@ -234,10 +234,12 @@ iframe {
   position: fixed;
   top: 0;
   left: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffb091), to(#ffddc4));
   background: linear-gradient(#ffb091, #ffddc4);
   background-image: -ms-linear-gradient(90deg, #ffc8a9 0%, #ffb091 100%);
   z-index: 777;
   padding: 112px 28px 0 140px;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.1s;
   transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1) 0.1s;
   opacity: 0;
   overflow-y: scroll; }
